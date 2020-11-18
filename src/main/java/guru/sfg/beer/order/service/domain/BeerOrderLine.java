@@ -42,6 +42,7 @@ public class BeerOrderLine extends BaseEntity {
         super(id, version, createdDate, lastModifiedDate);
         this.beerOrder = beerOrder;
         this.beerId = beerId;
+        this.upc = upc;
         this.orderQuantity = orderQuantity;
         this.quantityAllocated = quantityAllocated;
     }
