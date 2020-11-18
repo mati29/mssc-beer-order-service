@@ -14,11 +14,4 @@
     <name>mssc-beer-order-service</name>
     <description>MSSC Beer Order Service</description>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-validation</artifactId>
-        </dependency>
-    </dependencies>
-
 </project>
