@@ -18,4 +18,6 @@ public interface BeerOrderManager {
     void beerOrderAllocationFailed(BeerOrderDto beerOrderDto);
 
     void beerOrderPickedIp(UUID id);
+
+    void cancelOrder(UUID id);
 }
