@@ -11,10 +11,10 @@ import java.util.UUID;
 
 @ConfigurationProperties(prefix = "sfg.brewery", ignoreUnknownFields = false)
 @Service
-public class BeerServiceRestTemplateImpl implements BeerService {
+public class BeerServiceImpl implements BeerService {
 
-    private final String BEER_PATH_V1 = "/api/v1/beer/";
-    private final String BEER_UPC_PATH_V1 = "/api/v1/beerUpc/";
+    public static final String BEER_PATH_V1 = "/api/v1/beer/";
+    public static final String BEER_UPC_PATH_V1 = "/api/v1/beerUpc/";
     private final RestTemplate restTemplate;
 
     private String beerServiceHost;
@@ -23,7 +23,7 @@ public class BeerServiceRestTemplateImpl implements BeerService {
         this.beerServiceHost = beerServiceHost;
     }
 
-    public BeerServiceRestTemplateImpl(RestTemplateBuilder restTemplateBuilder) {
+    public BeerServiceImpl(RestTemplateBuilder restTemplateBuilder) {
         this.restTemplate = restTemplateBuilder.build();
     }
 
